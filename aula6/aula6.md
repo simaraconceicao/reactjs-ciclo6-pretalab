@@ -9,7 +9,7 @@ E deverá conter os componentes como descrito abaixo.
 
 O Projetinho será: "Meus projetos favoritos"
 
-`- Eu fiz o meu, vem aqui entender melhor e se inspirar`: [Meu site](https://pratalab-react2.netlify.app) 
+`- Eu fiz o meu, vem aqui entender melhor e se inspirar`: [Meu site](https://projeto-react2.netlify.app/) 
 
 > O que deve ser feito:
 1) Crie um projeto react com vite

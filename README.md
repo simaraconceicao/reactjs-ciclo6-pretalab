@@ -8,23 +8,23 @@
 
 ✓		2- 03/11	Componentes e JSX | Props
 
-✓		3- 05/11	Apresentação da professora | Projeto I - Profa Liz
+✓		3- 05/11	Apresentação da professora | Projeto I - Profa Lis
 
 ✓		4- 08/11	Listas e chaves    
 
 ✓	  5- 10/11	Introdução: estados, eventos e hooks 
 
-✓		6- 12/11	Projeto II - Profa Liz
+✓		6- 12/11	Projeto II - Profa Lis
 
-✓		7- 16/11	React Hooks (useState) - Profa Liz
+✓		7- 16/11	React Hooks (useState) - Profa Lis
 
 ✓		8- 17/11	React Hooks (useEffect)
 
-✓		9- 19/11	Projeto III - Profa Liz
+✓		9- 19/11	Projeto III - Profa Lis
 
 ✓		10- 22/11	Rotas - React Router
 
-✓		11- 23/11	Como usar CSS em react - Profa Liz
+✓		11- 23/11	Como usar CSS em react - Profa Lis
 
 ✓		12- 26/11	Projeto final do zero ao deploy - parte 1
 
