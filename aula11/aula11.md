@@ -4,7 +4,7 @@
 
 ---
 
-## Como usar CSS em react (Falar de css-modules?)
+## Como usar CSS em react
 
 Até aqui fizemos tudo sem estilizar, apenas usando o estilo que já vinha por default com o vite. Mas para ser uma pessoa desenvolvedora que cria interfaces de usuárias precisamos também saber fazer isso muito bem. Então chegou a hora de aprontar todas com css no ReactJs.
 
@@ -72,7 +72,7 @@ Documentação: https://github.com/css-modules/css-modules
 2) Importe seu arquivo
 
 ```
-import { styles } from './nome-do-arquivo.module.css'
+import styles from './nome-do-arquivo.module.css'
 ```
   >> importante escrever no caminho o nome e extensão exatamente como você salvou na pasta
 
