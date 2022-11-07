@@ -11,6 +11,7 @@ O Projetinho será: "Meus conteúdos favoritos"
 E deverá conter os componentes como descrito abaixo.
 
 `- Eu fiz o meu, vem aqui entender melhor e se inspirar`: [Meu site](https://projeto-react1.netlify.app/) 
+`- Lis fez o dela, vem aqui entender melhor e se inspirar`: [Site da Lis](https://projeto-react1-lis.netlify.app/) 
 
 > O que deve ser feito:
 1) Crie um projeto react com vite
@@ -21,16 +22,13 @@ E deverá conter os componentes como descrito abaixo.
 >> componentes que usam os componentes menores recebendos os conteúdos por props
 
 Bio 
+Card
 Cards
 
 # Componentes menores
 
 >> somente o esqueleto, os conteúdos serão inclusos por props
 
-Title 
-Subtitle
-Text
-Image
 Header
 Footer
 
