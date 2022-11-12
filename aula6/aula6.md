@@ -26,7 +26,7 @@ Não lembra? Calma bença! Segue o comandinho do sucesso ➟ ` npm create vite@l
 Limpe o projeto removendo o conteúdo que vem inserido nele para que possamos inserir o nosso!
 
 ```
-import { Header } from './components/Header'
+import { Title } from './components/Title'
 import { Bio } from './components/Bio'
 import { Cards } from './components/Cards'
 import { Footer } from './components/Footer'
@@ -36,8 +36,8 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Header title="Meus conteúdos favoritos" />
       <Bio />
+      <Title text="Meus conteúdos favoritos" />
       <Cards />
       <Footer message="Feito com ♡ por `seu nome`. E todos os direitos são reservados." />
     </div>
@@ -78,6 +78,7 @@ Crie uma pasta chamada `data`, nesta pasta crie os seguintes arquivos:
   ```
 
 ~
+
 # 🥸 Vale relembrar
 
 `❗ Bebam água minha gente <3 :) ❗`
