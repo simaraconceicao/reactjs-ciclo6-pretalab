@@ -60,7 +60,7 @@ Crie uma pasta chamada `data`, nesta pasta crie os seguintes arquivos:
 
 ## 🥷 Componentes do nosso projeto
 
-- Header
+- Title
   ```
     ≂≂≂≂≂≂≂≂≂≂
       Titulo
