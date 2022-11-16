@@ -1,62 +1,73 @@
-# Ciclo Formativo PretaLab | ReactJS  - Aula7 - 16/11 🚀 
+# Ciclo Formativo PretaLab | ReactJS - Aula7 - 16/11 🚀
 
-✓  React Hooks (useState)
+## ❤️ React hooks (useState)
 
-## State - useState
+Relembrando a aula 5...
+Em 2018, os hooks chegaram como uma solução para que não precisassemos escrever componentes usando classes. Nós temos hooks internos, que são algumas funções prontas que podemos usar em nossos projetos de react. E temos também a possibilidade de criar nossos próprios hooks costumizados.
 
-Lembra o exemplo do perfil do instagram na aula anterior? Eu disse que uma das soluções para se fazer isso é usando props. 
+Quando você se deparar por aí com alguma função dentro do react escrita assim, esses são os hooks: useState, useEffect, useMemo, useCallback entre outros.
 
-Um complemento seria usando state, que é o super poder passado para o componente para que ele possa lidar com dados e atualizar a tela toda vez que um evento acontecer (com uma pessoa usuária interagindo ou alguma configuração que a gente tenha criado).
+Hoje, vamos focar no useState!
 
-Vamos aprender praticando:
+---
 
-1) Antes de tudo você precisa importar de dentro do react o hook useState
+## useState
 
-```
-import { useState } from 'react'
-```
+O useState permite a criação de estado no componente através de função e faz o gerenciamento do estado local do componente retorna um array como resultado. Por isso, é possível fazermos uma desestruturação para receber partes desse retorno.
+### 👩🏿‍💻 Vamos de mão na massa:
 
-2) Dentro do seu componente antes do retorno você destrutura um array que recebe duas informações
- >> uma variável onde vamos guardar nosso valor inicial e suas futuras atualizações
- >> uma função que vai receber a lógica para atualizar a variável
+1. Antes de tudo você precisa importar de dentro do react o hook useState
 
-```
-const [contador, setContador] = useState(0)
-```
-> dentro do seu estado inicial podemos passar valores de qualquer tipo de dados em javacript, nesse caso aqui começamos com o número zero, mas poderia ser um array, um objeto, uma string entr outros.
+   ```javascript
+   import { useState } from "react";
+   ```
 
-3) Podemos declarar a lógica da nossa função que irá atualizar nossa variável
+2. Dentro do seu componente antes do retorno você destrutura um array que recebe duas informações
 
-```
-setContador(contador += 1)
-```
-4) Podemos dizer quando queremos que nossa função atualizadora seja chamada a partir de uma configuração ou de um evento
-```
-setInterval(
-  setContador(contador += 1),
-  1000
-)
-```
-ou 
+   - uma variável onde vamos guardar nosso valor atribuido
+   - uma função que vai receber a lógica para atualizar a variável
 
-```
-function handleClick() {
-  setContador(contador += 1)
-}
-```
-5) Usar nosso evento no html do componente
+   ```javascript
+   const [contador, setContador] = useState(0);
+   ```
 
-```
-<button onClick= {handleClick}>click me</button>
-```
+   ` Vale ressaltar que dentro do seu estado, seja ele inicial ou não, podemos passar valores de ~~qualquer tipo de dados em javacript~~. Nesse caso aqui começamos com o número zero, mas poderia ser um array, um objeto, uma string entre outros.`
 
-6) Chamar o estado no html do
-```
-<p>{contador}</>
-```
+3. Podemos declarar a lógica da nossa função que irá atualizar o nosso estado:
 
-**Exemplos:**
-| Recurso | Descrição |
-| --- | --- |
-| `Contador de clicks` |  Agora vamos treinar criar componentes, guardar memória no componente e atualizar na tela a quantidade de vezes que um botão está sendo clicado. |
+   ```javascript
+   setContador((contador) => contador + 1);
+   ```
 
+4. Podemos dizer quando queremos que nossa função atualizadora seja chamada a partir de uma configuração ou de um evento
+
+   ```javascript
+   setInterval(
+     setContador((contador) => contador + 1),
+     1000
+   );
+   ```
+
+   ou
+
+   ```javascript
+   function handleClick() {
+     setContador((contador) => contador + 1);
+   }
+   ```
+
+5. Usar nosso estado no html do componente
+
+   ```html
+   <button onClick="{handleClick}">+</button>
+   <p>{contador}</p>
+   <button onClick="{handleClick}">-</button>
+   ```
+
+**Missões do dia:**
+
+| Recurso | Descrição 
+| --- | ---
+| `Contador` | Vamos criar dois botões e um contador que nos mostra esse o valor do contador sendo incrementado e decrementado através dos botões de + e - 
+| `Tradutor` | Vamos criar um botão abaixo do título e quando esse botão for criado, deve traduzir o texto do titulo para inglês.
+| `Tradutor Plus` | Ainda usando o botão criado na missão acima, quando esse botão for clicado e o texto estiver em português, deve ser mostrado em inglês. Quando esse texto tiver em inglês e for clicado, deve ser mostrado em português.

@@ -1,48 +1,32 @@
-# Ciclo Formativo PretaLab | ReactJS  - Aula 6 - 12/11 🚀 
+# Ciclo Formativo PretaLab | ReactJS - Aula 6 - 12/11 🚀
 
-✓  Projeto II
----
+## ✓ Projeto II
 
-### `Projeto da semana` 
+### `Projeto da semana`
+
 Vamos iniciar um projetinho react do zero com direito a componetização, uso de props, e uso de listas/keys.
 E deverá conter os componentes como descrito abaixo.
 
-O Projetinho será: "Meus projetos favoritos"
+O Projetinho será: `"Meus Conteúdos Favoritos"` ou `"Meus Projetos Favoritos"`.
 
-`- Eu fiz o meu, vem aqui entender melhor e se inspirar`: [Meu site](https://projeto-react2.netlify.app/) 
+- A Simara fez o dela com base nos projetos preferidos, vem aqui entender melhor e se inspirar: [Site da Si](https://projeto-react2.netlify.app/)
 
-> O que deve ser feito:
-1) Crie um projeto react com vite
-2) Suba esse projeto no github, atualize o read me contando tudo o que você aprendeu nas últimas aulas. 
-3) Arraseee! E qualquer coisa, me chama!
-# Data
->> array de objetos com as informações de projetos
-projects
+- A Lis fez o dela com base nos conteudos preferidos, vem aqui entender melhor e se inspirar: [Site da Lis](https://projeto-react2-lis.netlify.app)
 
-# Componentes maiores
->> componentes que usam os componentes menores recebendos os conteúdos por props
+# Vamos juntas?
 
-Bio 
-Cards (atenção pois aqui recebemos e mapeamos os dados também)
+## 🚧 Crie seu projeto com o Vite
 
-# Componentes menores
+Não lembra? Calma bença! Segue o comandinho do sucesso ➟ ` npm create vite@latest nome-do-app -- --template react`
 
->> somente o esqueleto, os conteúdos serão inclusos por props
+~
 
-Title 
-Subtitle
-Text
-Image
-Header
-Footer
+## 💜 Estrutura do App
 
-# Estrutura do App
-
->> recebe todos os conteúdos que devem aparecer na tela e recebe também o conteúdo do footer e header por props
-
+Limpe o projeto removendo o conteúdo que vem inserido nele para que possamos inserir o nosso!
 
 ```
-import { Header } from './components/Header'
+import { Title } from './components/Title'
 import { Bio } from './components/Bio'
 import { Cards } from './components/Cards'
 import { Footer } from './components/Footer'
@@ -52,13 +36,49 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Header content="Meus conteúdos favoritos" />
       <Bio />
+      <Title text="Meus conteúdos favoritos" />
       <Cards />
-      <Footer content="Feito com ♡ por Simara. E todos os direitos são reservados." />
+      <Footer message="Feito com ♡ por `seu nome`. E todos os direitos são reservados." />
     </div>
   )
 }
 
 export default App
 ```
+
+~
+
+## 💎 Dados da nossa aplicação
+
+Crie uma pasta chamada `data`, nesta pasta crie os seguintes arquivos:
+
+- `profile-data.js` e crie um objeto com informações que serão inseridas na Bio (nome, apelido, foto, descrição).
+- `contents.js` ou `projects.js` e dentro dele popule o array de objetos com as informações (titulo, link para gif q represente, descrição e link para mais detalhes).
+
+~
+
+## 🥷 Componentes do nosso projeto
+
+- Title
+  ```
+    ≂≂≂≂≂≂≂≂≂≂
+      Titulo
+    ≃≃≃≃≃≃≃≃≃≃
+  ```
+- Bio (deve receber os dados do arquivo 'profile-data.js').
+- Card (Titulo, um gif que represente, descrição e link para mais informações)
+- Cards (Esse componente irá chamar o componente `card` repetindo ele pelo numero de elementos existente na lista).
+- Footer
+
+  ```
+                            ~~~~~~~~~~
+  Feito com ♡ por SEUNOME. E todos os direitos são reservados
+
+  ```
+
+~
+
+# 🥸 Vale relembrar
+
+`❗ Bebam água minha gente <3 :) ❗`
