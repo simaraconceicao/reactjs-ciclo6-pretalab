@@ -13,8 +13,7 @@ Hoje, vamos focar no useState!
 
 ## useState
 
-DEFINIR (...)
-
+O useState permite a criação de estado no componente através de função e faz o gerenciamento do estado local do componente retorna um array como resultado. Por isso, é possível fazermos uma desestruturação para receber partes desse retorno.
 ### 👩🏿‍💻 Vamos de mão na massa:
 
 1. Antes de tudo você precisa importar de dentro do react o hook useState
