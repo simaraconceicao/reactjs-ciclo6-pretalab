@@ -1,0 +1,24 @@
+.headerContainer {
+  padding: 6rem;
+  background: #686AAC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.headerTitle {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.headerImage {
+  width: 40%;
+}
+
+@media(max-width: 765px) {
+  .headerImage {
+    width: 100%;
+  }
+}
