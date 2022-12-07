@@ -6,13 +6,13 @@ import { getDatabase } from 'firebase/database'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBGD85bJL36_-lzB-STgW6WIwhGbHd4XGg",
-  authDomain: "projeto-final-ciclo6.firebaseapp.com",
-  projectId: "projeto-final-ciclo6",
-  storageBucket: "projeto-final-ciclo6.appspot.com",
-  messagingSenderId: "205825108971",
-  appId: "1:205825108971:web:0e61419b5a92f9799187ae",
-  databaseURL: "https://projeto-final-ciclo6-default-rtdb.firebaseio.com/"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  databaseURL: import.meta.env.VITE_DATABASE_URL
 }
 
 // Initialize Firebase
